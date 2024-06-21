@@ -1,0 +1,252 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: black;
+  }
+
+  html {
+    background: url(https://static.vecteezy.com/system/resources/thumbnails/026/365/937/small_2x/beautiful-blurred-green-nature-background-ai-generated-photo.jpg) no-repeat fixed;
+    background-size: 100% 100%;
+  }
+
+  #header {
+    z-index: 10;
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    background: #ddd9;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+
+  #header-img {
+    height: 90%;
+    border-radius: 30%;
+    margin: auto 10px;
+  }
+
+  #nav-bar {
+    max-width: 500px;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .nav-link {
+    position: relative;
+  }
+
+  .nav-link::before {
+    content: '';
+    background-color: lime;
+    width: 0%;
+    height: 3px;
+    top: 100%;
+    left: 50%;
+    position: absolute;
+  }
+
+  .nav-link:hover::before {
+    transition: all 1s;
+    width: 100%;
+    left: 0;
+  }
+
+  #one,
+  #two,
+  #three {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+  }
+
+  #one::before,
+  #two::before,
+  #three::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+
+  #home {
+
+    position: relative;
+    top: calc(50% - 50px);
+    left: 10%;
+    height: 70px;
+    width: 420px;
+    z-index: 2;
+
+  }
+
+
+  #heading {
+    color: white;
+    font-weight: 900;
+    font-size: 1.5rem;
+  }
+
+  #slogan {
+    color: white;
+    font-weight: 900;
+    font-size: 1.2rem;
+
+
+  }
+
+  /*  two   */
+  #two {
+    height: fit-content;
+  }
+
+  #item {
+
+    display: flex;
+    align-items: stretch;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 2;
+    padding: 40px;
+    min-height: fit-content;
+
+  }
+
+
+  .items {
+    margin-top: 2%;
+    padding: 10px;
+
+    width: 45%;
+    min-height: fit-content;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.7);
+
+    border-radius: 25px;
+  }
+
+  .image {
+    height: 100px;
+    overflow: hidden;
+  }
+
+  .intro {
+    font-size: 0.8rem;
+    text-align: justify;
+    color: white;
+  }
+
+  .intro a {
+    color: navy;
+    font-size: 0.8rem;
+
+  }
+
+  svg {
+    height: 100%;
+  }
+
+  /* three */
+  #three {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #contact {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+    z-index: 2;
+    top: 20px;
+
+    width: fit-content;
+    max-width: 90%;
+    padding: 20px;
+
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.7);
+
+    border-radius: 25px;
+    overflow: hidden;
+  }
+
+
+  form {
+    display: flex;
+    flex-direction: column;
+
+    margin: 20px;
+  }
+
+  #label {
+    color: white;
+    margin: 20px;
+  }
+
+  #email {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    border-radius: 25px;
+    margin-bottom: 10px;
+  }
+
+  #submit {
+    border-radius: 25px;
+    padding: 5px;
+  }
+
+  @media (orientation: portrait) {
+
+
+    #item {
+      justify-content: center;
+      padding: 0px;
+    }
+
+    .items {
+      margin-top: 5%;
+      width: 90%;
+      border-radius: 10px;
+    }
+
+    .intro a {
+      font-weight: 900;
+    }
+
+    #contact {
+      flex-direction: column;
+    }
+
+    iframe {
+      width: 90%;
+      height: auto;
+    }
+
+    #form {
+      width: 90%;
+    }
+  }.scrolled{
+ background-color: #ddde !important; 
+}
